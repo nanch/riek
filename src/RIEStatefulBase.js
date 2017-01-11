@@ -47,7 +47,7 @@ export default class RIEStatefulBase extends RIEBase {
         return <input
             disabled={this.state.loading}
             className={this.makeClassString()}
-            defaultValue={this.props.value}
+            defaultValue={this.props.editDefaultValue || this.props.value}
             onInput={this.textChanged}
             onBlur={this.finishEditing}
             ref="input"

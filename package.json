@@ -20,8 +20,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "npm run build",
-    "build-lib": "rm -rf lib/*; babel src --out-dir lib",
-    "build-demo": "rm demo/demo.js; webpack demo/demo.jsx demo/demo.js",
+    "build-lib": "rm -rf lib/* & babel src --out-dir lib",
+    "build-demo": "rm demo/demo.js & webpack demo/demo.jsx demo/demo.js",
     "build": "npm run build-lib && npm run build-demo"
   },
   "peerDependencies": {
@@ -36,7 +36,7 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-1": "^6.3.13",
     "highlight.js": "^9.1.0",
-    "react-highlight": "^0.6.1",
+    "react-highlight": "^0.9.0",
     "webpack": "^1.12.11"
   }
 }
